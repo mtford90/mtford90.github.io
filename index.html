@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<!-- <div class="home">
+  <h1 class="page-heading">Posts</h1>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div> -->
+
+<div id="all-posts">
+    {% for post in site.posts %}
+        <div class="row featurette c{% cycle '1', '2', '3', '4', '5', '6', '7' %}" onclick="window.location='{{ post.url | prepend: site.baseurl }}';">
+            <div class="overlay"></div>
+            <div class="col-md-12 col">
+                    <span class="small date">
+                        {{ post.date | date: "%b %-d, %Y" }}
+                    </span>
+
+                <h1 class="featurette-heading">{{ post.title }}</h1>
+
+                <div class="content">
+                    {{ post.summary }}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
