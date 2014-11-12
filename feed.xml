@@ -4,10 +4,10 @@
     <title>Your awesome title</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Nov 2014 12:45:19 -0500</pubDate>
-    <lastBuildDate>Wed, 12 Nov 2014 12:45:19 -0500</lastBuildDate>
+    <link>/blog/</link>
+    <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 12 Nov 2014 13:01:12 -0500</pubDate>
+    <lastBuildDate>Wed, 12 Nov 2014 13:01:12 -0500</lastBuildDate>
     <generator>Jekyll v2.5.1</generator>
     
       <item>
@@ -120,8 +120,8 @@ class MyClass(object):
 &lt;p&gt;Both are intended for use in replaying the request. The curl command can be used to replay via command-line and the python code can be used within a Django unit test or simply as a standalone script.&lt;/p&gt;
 </description>
         <pubDate>Sat, 14 Jun 2014 10:44:00 -0400</pubDate>
-        <link>/blog/2/</link>
-        <guid isPermaLink="true">/blog/2/</guid>
+        <link>/blog/blog/2/</link>
+        <guid isPermaLink="true">/blog/blog/2/</guid>
         
         
         <category>python</category>
