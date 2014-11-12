@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your awesome title</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 12 Nov 2014 12:04:36 -0500</pubDate>
+    <lastBuildDate>Wed, 12 Nov 2014 12:04:36 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.1</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 10 Nov 2014 14:25:57 -0500</pubDate>
+        <link>/jekyll/update/2014/11/10/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">/jekyll/update/2014/11/10/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 10 Nov 2014 14:25:57 -0500</pubDate>
+        <link>/jekyll/update/2014/11/10/test-123.html</link>
+        <guid isPermaLink="true">/jekyll/update/2014/11/10/test-123.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Introducing Silk, live profiling for Django</title>
+        <description>&lt;p&gt;Silk is a live profiling and inspection tool for the Django framework. It:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Intercepts requests and responses, recording:
+    &lt;ul&gt;
+      &lt;li&gt;SQL Queries&lt;/li&gt;
+      &lt;li&gt;Response times&lt;/li&gt;
+      &lt;li&gt;Headers&lt;/li&gt;
+      &lt;li&gt;Bodies&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Allows tracing of SQL queries via Python stack traces&lt;/li&gt;
+  &lt;li&gt;Profiles blocks of code and functions &lt;/li&gt;
+  &lt;li&gt;Generates code and commands for replaying requests&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A &lt;a href=&quot;/silk&quot;&gt;live demo&lt;/a&gt; is actively profiling this site. The
+github readme is currently acting as documentation and is available &lt;a href=&quot;https://github.com/mtford90/silk&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Silk releases can be downloaded from &lt;a href=&quot;https://github.com/mtford90/silk/releases&quot;&gt;here&lt;/a&gt; or installed via pip into your virtualenv:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+pip install django-silk
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Below is a feature summary:&lt;/p&gt;
+
+&lt;h2 id=&quot;request-inspection&quot;&gt;Request Inspection&lt;/h2&gt;
+
+&lt;p&gt;The Silk middleware intercepts and stores requests and responses and stores them in the configured database.
+These requests can then be filtered and inspected using Silk’s UI through the request overview:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mtford90/silk/master/screenshots/1.png&quot; width=&quot;720px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Further details on each request are also available by clicking the relevant request:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mtford90/silk/master/screenshots/2.png&quot; width=&quot;720px&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;sql-inspection&quot;&gt;SQL Inspection&lt;/h2&gt;
+
+&lt;p&gt;Silk also intercepts SQL queries that are generated by each request. We can get a summary on things like 
+the tables involved, number of joins and execution time:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mtford90/silk/master/screenshots/3.png&quot; width=&quot;720px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before diving into the stack trace to figure out where this request is coming from:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mtford90/silk/master/screenshots/5.png&quot; width=&quot;720px&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;profiling&quot;&gt;Profiling&lt;/h2&gt;
+
+&lt;p&gt;Silk can also be used to profile random blocks of code/functions. It provides a decorator and a context
+manager for this purpose. &lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+@silk_profile(name=&#39;View Blog Post&#39;)
+def post(request, post_id):
+    p = Post.objects.get(pk=post_id)
+    return render_to_response(&#39;post.html&#39;, {
+        &#39;post&#39;: p
+    })
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Whenever a blog post is viewed we get an entry within the Silk UI:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mtford90/silk/master/screenshots/7.png&quot; width=&quot;720px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Silk profiling not only provides execution time, but also collects SQL queries executed within the block in the same fashion as with requests:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mtford90/silk/master/screenshots/8.png&quot; width=&quot;720px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that currently profiling does not occur outside of the request/response cycle.&lt;/p&gt;
+
+&lt;h2 id=&quot;experimental-features&quot;&gt;Experimental Features&lt;/h2&gt;
+
+&lt;p&gt;The below features are still in need of thorough testing and should be considered experimental.&lt;/p&gt;
+
+&lt;h3 id=&quot;dynamic-profiling&quot;&gt;Dynamic Profiling&lt;/h3&gt;
+
+&lt;p&gt;One of Silk’s more interesting features is dynamic profiling. If for example we wanted to profile a function in a dependency to which we only have read-only access (e.g. system python libraries owned by root) we can add the following to &lt;code&gt;settings.py&lt;/code&gt; to apply a decorator at runtime:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+SILKY_DYNAMIC_PROFILING = [{
+    &#39;module&#39;: &#39;path.to.module&#39;,
+    &#39;function&#39;: &#39;MyClass.bar&#39;
+}]
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;which is roughly equivalent to:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+class MyClass(object):
+    @silk_profile()
+    def bar(self):
+        pass
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;code-generation&quot;&gt;Code Generation&lt;/h3&gt;
+
+&lt;p&gt;Silk currently generates two bits of code per request:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/mtford90/silk/master/screenshots/9.png&quot; width=&quot;720px&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Both are intended for use in replaying the request. The curl command can be used to replay via command-line and the python code can be used within a Django unit test or simply as a standalone script.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Jun 2014 10:44:00 -0400</pubDate>
+        <link>/blog/2/</link>
+        <guid isPermaLink="true">/blog/2/</guid>
+        
+        
+        <category>python</category>
+        
+        <category>django</category>
+        
+      </item>
+    
+  </channel>
+</rss>
