@@ -13,8 +13,8 @@ navigation:
    url: /
  - text: Projects
    url: /projects.html
- - text: About Me
-   url: /about.html
+# - text: About Me
+#   url: /about.html
 
 projects:
  - title: Silk

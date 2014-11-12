@@ -16,8 +16,8 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            var $overlay = $('.row');
-            $overlay.hover(function () {
+            var $row = $('.row');
+            $row.hover(function () {
                 var thisOverlay = $(this).find('.overlay');
                 var $overlays = $('.overlay');
                 $overlays.finish();
@@ -29,11 +29,13 @@
                 });
                 thisOverlay.css('opacity', 0.0);
             });
-            $('#all-posts').hover(undefined, function () {
+            var handleHover = function () {
                 var $overlays = $('.overlay');
                 $overlays.finish();
                 $overlays.css('opacity', 0.0);
-            });
+            };
+            $('#all-posts').hover(undefined, handleHover);
+            $('#projects').hover(undefined, handleHover);
         });
     </script>
     <style type="text/css">

@@ -22,10 +22,12 @@ layout: default
 
 <div id="projects">
     {% for project in site.projects %}
-        <div class="row">
-            <div class="col-md-12">
-                {% include project.html project=project %}
-            </div>
+    <div class="row c{% cycle '1', '2', '3', '4', '5', '6', '7' %}"
+         onclick="window.location='{{ project.url | prepend: site.baseurl }}';">
+        <div class="overlay"></div>
+        <div class="col-md-12">
+            {% include project.html project=project %}
         </div>
+    </div>
     {% endfor %}
 </div>

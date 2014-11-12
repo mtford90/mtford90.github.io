@@ -25,6 +25,10 @@ body {
   padding-top: 0;
 }
 
+.row {
+  margin-right: 0;
+}
+
 .container {
   padding: 0;
   margin-left: 0;
@@ -50,3 +54,4 @@ body {
 @import "_single.scss";
 @import "_login.scss";
 @import "_projects.scss";
+@import "_overlay.scss";
