@@ -6,30 +6,34 @@ $alt5: rgb(22, 124, 128);
 $alt6: rgb(0, 130, 200);
 $alt7: rgb(114, 97, 110);
 
-.c1 {
+$brand-color: rgb(51, 51, 51);
+$link-color: #7A7A7A;
+$navbar-color: #F0F0F0;
+
+.colour1 {
   background-color: $alt1;
 }
 
-.c2 {
+.colour2 {
   background-color: $alt2;
 }
 
-.c3 {
+.colour3 {
   background-color: $alt3;
 }
 
-.c4 {
+.colour4 {
   background-color: $alt4;
 }
 
-.c5 {
+.colour5 {
   background-color: $alt5;
 }
 
-.c6 {
+.colour6 {
   background-color: $alt6;
 }
 
-.c7 {
+.colour7 {
   background-color: $alt7;
 }

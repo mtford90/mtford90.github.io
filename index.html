@@ -4,19 +4,20 @@ layout: default
 
 <div id="all-posts">
     {% for post in site.posts %}
-        <div class="row featurette c{% cycle '1', '2', '3', '4', '5', '6', '7' %}" onclick="window.location='{{ post.url | prepend: site.baseurl }}';">
-            <div class="overlay"></div>
-            <div class="col-md-12 col">
-                    <span class="small date">
-                        {{ post.date | date: "%b %-d, %Y" }}
-                    </span>
+    <div class="row featurette colour{% cycle '1', '2', '3', '4', '5', '6', '7' %}"
+         onclick="window.location='{{ post.url | prepend: site.baseurl }}';">
+        <div class="overlay"></div>
+        <div class="col-md-12 col">
+                <span class="small date">
+                    {{ post.date | date: "%b %-d, %Y" }}
+                </span>
 
-                <h1 class="featurette-heading">{{ post.title }}</h1>
+            <h1 class="featurette-heading">{{ post.title }}</h1>
 
-                <div class="content">
-                    {{ post.summary }}
-                </div>
+            <div class="description">
+                {{ post.summary }}
             </div>
         </div>
+    </div>
     {% endfor %}
 </div>

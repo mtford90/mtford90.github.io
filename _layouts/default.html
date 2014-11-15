@@ -15,6 +15,24 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+        function toggleSidebar() {
+            var wrapper = $("#toggle-wrapper");
+            wrapper.toggleClass("toggled");
+            // If the browser has implemented Storage we use this to remember whether the sidebar is open
+            // or closed for the next time the app is opened.
+            if (typeof(Storage) !== 'undefined') {
+                var classes = wrapper[0].className.split(/\s+/);
+                if (classes.indexOf('toggled') > -1) {
+                    console.log('toggling to true');
+                    localStorage.toggled = 'true';
+                }
+                else {
+                    console.log('toggling to false');
+                    localStorage.toggled = 'false';
+                }
+            }
+        }
+
         $(document).ready(function () {
             var $row = $('.row');
             $row.hover(function () {
@@ -36,6 +54,23 @@
             };
             $('#all-posts').hover(undefined, handleHover);
             $('#projects').hover(undefined, handleHover);
+            if (typeof(Storage) !== 'undefined') {
+                var wrapper = $("#toggle-wrapper");
+                if (localStorage.toggled == 'true') {
+                    wrapper.addClass('toggled');
+                }
+                else {
+                    wrapper.removeClass('toggled');
+                }
+            }
+
+
+            setTimeout(function () {
+                $('#page-content-wrapper').addClass('sidebar-transitions');
+                $('#sidebar-wrapper').addClass('sidebar-transitions');
+                $('#sidebar-nav').addClass('sidebar-transitions');
+            }, 500);
+
         });
     </script>
     <style type="text/css">
@@ -45,33 +80,70 @@
     </style>
 </head>
 <body>
-    <div class="container marketing">
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="{{site.baseurl}}">
-                mtford.co.uk
-            </a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                 {% assign url = page.url|remove:'index.html' %}
-                 {% for link in site.navigation %}
-                    <li {% if url == link.url %}class="active"{% endif %}>
-                        <a href="{{site.baseurl}}{{ link.url }}">
-                            {{ link.text }}
-                        </a>
-                    </li>
-                 {% endfor %}
-            </ul>
-            <div class="pull-right">
-                <a href="{{site.baseurl}}/feed.xml"><i class="fa fa-rss"></i></a>
+<div id="wrapper">
+    <div id="toggle-wrapper">
+        <div id="page-content-wrapper">
+            <div class="container marketing">
+                <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="{{site.baseurl}}">
+                                mtford.co.uk
+                            </a>
+                        </div>
+                        <!--<div class="navbar-collapse collapse">-->
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav">
+                                {% assign url = page.url|remove:'index.html' %}
+                                {% for link in site.navigation %}
+                                <li
+                                {% if url == link.url %}class="active"{% endif %}>
+                                <a href="{{site.baseurl}}{{ link.url }}">
+                                    {{ link.text }}
+                                </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            <div class="pull-right">
+                                <a href="{{site.baseurl}}/feed.xml"><i class="fa fa-rss"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{ content }}
             </div>
         </div>
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <span class="navbar-brand">
+                        MTFORD.CO.UK
+                    </span>
+                    <button class="btn toggle-button" onclick="toggleSidebar()">
+                        <i class="fa fa-exchange toggle"></i>
+                    </button>
+                </li>
+                {% for link in site.navigation %}
+                <li>
+                    <a href="{{site.baseurl}}{{ link.url }}" {% if url == link.url %}class="active"{% endif %}>
+                    <i class="{{ link.icon }}"></i>
+                    <span>{{ link.text }}</span>
+                    </a>
+                </li>
+                </li>
+                {% endfor %}
+                <li>
+                    <a href="{{site.baseurl}}/feed.xml">
+                        <i class="fa fa-rss"></i>
+                        <span>RSS</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+
 </div>
 
-       {{ content }}
-    </div>
+
 </body>
 </html>

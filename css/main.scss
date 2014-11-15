@@ -3,9 +3,17 @@
 ---
 @charset "utf-8";
 
+
+$grid-float-breakpoint:    480px !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !important;
+
+
 @import "bootstrap/assets/stylesheets/_bootstrap.scss";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,800);
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,600,900);
+@import "_responsive.scss";
+@import "bootstrap/assets/stylesheets/bootstrap/variables";
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -47,6 +55,8 @@ body {
   border: none;
 }
 
+
+
 @import "_colours.scss";
 @import "_nav.scss";
 @import "_editor.scss";
@@ -55,3 +65,30 @@ body {
 @import "_login.scss";
 @import "_projects.scss";
 @import "_overlay.scss";
+@import "_syntax.scss";
+@import "_page.scss";
+@import "_about.scss";
+@import "sidebar";
+
+iframe {
+  display: inline;
+}
+
+h1 {
+  font-size: 24px;
+  @include breakpoint('small') {
+    font-size: 32px;
+  }
+}
+
+.description {
+  padding-top: 4px;
+  opacity: 0.7;
+  font-size: 12px;
+  line-height: 16px;
+  @include breakpoint('small') {
+    line-height: 23px;
+    font-size: 15px;
+  }
+}
+

@@ -23,9 +23,9 @@ github readme is currently acting as documentation and is available [here](https
 
 Silk releases can be downloaded from [here](https://github.com/mtford90/silk/releases) or installed via pip into your virtualenv:
 
-```
+{% highlight bash linenos %}
 pip install django-silk
-```
+{% endhighlight %}
 
 Below is a feature summary:
 
@@ -58,14 +58,14 @@ manager for this purpose.
 
 For example:
 
-```
+{% highlight python linenos %}
 @silk_profile(name='View Blog Post')
 def post(request, post_id):
     p = Post.objects.get(pk=post_id)
     return render_to_response('post.html', {
         'post': p
     })
-```
+{% endhighlight %}
 
 Whenever a blog post is viewed we get an entry within the Silk UI:
 
@@ -85,21 +85,21 @@ The below features are still in need of thorough testing and should be considere
 
 One of Silk's more interesting features is dynamic profiling. If for example we wanted to profile a function in a dependency to which we only have read-only access (e.g. system python libraries owned by root) we can add the following to `settings.py` to apply a decorator at runtime:
 
-```
+{% highlight python linenos %}
 SILKY_DYNAMIC_PROFILING = [{
     'module': 'path.to.module',
     'function': 'MyClass.bar'
 }]
-```
+{% endhighlight %}
 
 which is roughly equivalent to:
 
-```
+{% highlight python linenos %}
 class MyClass(object):
     @silk_profile()
     def bar(self):
         pass
-```
+{% endhighlight %}
 
 ### Code Generation
 

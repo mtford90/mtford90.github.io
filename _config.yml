@@ -8,13 +8,19 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 # Build settings
 markdown: kramdown
+highlighter: pygments
+kramdown:
+  input: GFM
 navigation:
  - text: Blog
    url: /
+   icon: fa fa-newspaper-o
  - text: Projects
    url: /projects.html
-# - text: About Me
-#   url: /about.html
+   icon: fa fa-list
+ - text: About Me
+   url: /about.html
+   icon: fa fa-question
 
 projects:
  - title: Silk
@@ -33,3 +39,7 @@ projects:
    description: "Photo sharing like you've never seen before"
    url: http://mosayc.com
    img_url: /images/mosayc.jpg
+ - title: Bradford & Shipley Badminton Club
+   description: "A simple Django-based website for a local badminton club"
+   url: http://bscsbc.co.uk/
+   img_url: /images/badminton.png
