@@ -18,9 +18,9 @@ navigation:
  - text: Projects
    url: /projects.html
    icon: fa fa-list
- - text: About Me
-   url: /about.html
-   icon: fa fa-question
+# - text: About Me
+#   url: /about.html
+#   icon: fa fa-question
 
 projects:
  - title: Silk
@@ -31,6 +31,10 @@ projects:
    description: "Object Mapping for Javascript" 
    url: http://mtford90.github.io/siesta/
    img_url: /images/siesta.png
+ - title: Jigsaw
+   description: "Turn videos into interactive notes"
+   url: http://188.226.210.93/breakdown
+   img_url: /images/jigsaw.png
  - title: Red Hot React
    description: "A boilerplate for ReactJS with emphasis on developer productivity"
    url: http://mtford90.github.io/red-hot-react
