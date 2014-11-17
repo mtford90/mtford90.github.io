@@ -32,7 +32,7 @@ projects:
    url: http://mtford90.github.io/siesta/
    img_url: /images/siesta.png
  - title: Jigsaw
-   description: "Turn videos into interactive notes"
+   description: "Turn videos into interactive notes. Note that this is very much in the experimental phase and has only been tested on Firefox Developer Edition."
    url: http://188.226.210.93/breakdown
    img_url: /images/jigsaw.png
  - title: Red Hot React
