@@ -66,9 +66,13 @@
 
 
             setTimeout(function () {
-                $('#page-content-wrapper').addClass('sidebar-transitions');
-                $('#sidebar-wrapper').addClass('sidebar-transitions');
-                $('#sidebar-nav').addClass('sidebar-transitions');
+                var transitionsClass = 'sidebar-transitions';
+                $('#page-content-wrapper').addClass(transitionsClass);
+                $('#sidebar-wrapper').addClass(transitionsClass);
+                var $sidebarNav = $('#sidebar-nav');
+                $sidebarNav.addClass(transitionsClass);
+                $sidebarNav.find('a').addClass(transitionsClass);
+                $sidebarNav.find('i').addClass(transitionsClass);
             }, 500);
 
         });

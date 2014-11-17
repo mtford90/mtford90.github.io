@@ -1,0 +1,195 @@
+@import "colours";
+@import "mixins";
+@import "transitions";
+@import "responsive";
+
+$sidebar-size: 250px;
+$sidebar-movement: 210px;
+$change: 'xsmall';
+
+#navbar-toggle {
+  border-width: 0;
+  position: relative;
+  left: 8px;
+  &:hover {
+    //    background-color: inherit !important;
+    color: $brand-color;
+    border-radius: 2px;
+  }
+}
+
+@mixin transitions() {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.sidebar-transitions {
+  @include transitions();
+}
+
+#wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  #toggle-wrapper {
+    overflow: auto;
+    &.toggled {
+      $width: $sidebar-size - $sidebar-movement;
+      #sidebar-wrapper {
+        width: $width;
+        .sidebar-nav {
+          margin-left: - $sidebar-movement;
+        }
+        @include breakpoint($change) {
+          margin-top: 0;
+          margin-left: -$width;
+        }
+      }
+      #page-content-wrapper {
+        margin-left: $width;
+        left: 0;
+        //        @include transitions();
+        @include breakpoint($change) {
+          margin-top: 0;
+          margin-left: 0;
+        }
+      }
+    }
+
+    height: 100%;
+    width: 100%;
+    #sidebar-wrapper {
+      //      @include transitions();
+      height: 100%;
+      overflow: hidden;
+      background: $navbar-color;
+      position: absolute;
+      width: $sidebar-size;
+      top: 0;
+      left: 0;
+
+      @include breakpoint($change) {
+        margin-left: -$sidebar-size;
+      }
+
+      .sidebar-nav {
+        top: 0;
+        width: $sidebar-size;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        //        @include transitions();
+        li {
+          text-indent: 20px;
+          line-height: 40px;
+
+          a {
+            display: block;
+            text-decoration: none;
+            color: $link-color;
+            font-size: 11px;
+            @include navItem();
+            transition: background-color $transition-time, color $transition-time;
+            -webkit-transition: background-color $transition-time, color $transition-time;
+
+            i {
+              float: right;
+              padding-top: 14px;
+              padding-right: 13px;
+              font-size: 12px;
+              font-weight: 100;
+              text-transform: none;
+            }
+
+            &.active {
+              text-decoration: none;
+              color: white;
+              background: black;
+            }
+
+            &:hover {
+              text-decoration: none;
+              color: white;
+              background: black;
+            }
+
+            &:active {
+              text-decoration: none;
+            }
+
+            &:focus {
+              text-decoration: none;
+            }
+          }
+          &.sidebar-brand {
+            height: 50px;
+            font-size: 18px;
+            line-height: 60px;
+            position: relative;
+            right: 22px;
+
+            .toggle-button {
+              position: absolute;
+              right: -22px;
+              top: 12px;
+              border-radius: 0;
+              background-color: transparent;
+              color: $brand-color;
+              outline: none;
+            }
+
+            i {
+              float: none;
+              &.brand-icon {
+                position: relative;
+                left: 5px;
+              }
+              &.toggle {
+                position: relative;
+                float: right;
+              }
+            }
+
+            a {
+              color: #999999;
+
+              &.active {
+                text-decoration: none;
+                // Override
+                color: $brand-color;
+                background: inherit;
+              }
+
+              &:hover {
+                color: $brand-color;
+                background: none;
+              }
+            }
+
+          }
+
+        }
+      }
+    }
+
+    #page-content-wrapper {
+      //      @include transitions();
+      .container-fluid {
+        padding: 0;
+        margin: 0;
+      }
+      margin-left: $sidebar-size - $sidebar-movement;
+      margin-top: -50px;
+      position: relative;
+      left: $sidebar-movement;
+
+      @include breakpoint($change) {
+        margin-top: 0;
+        margin-left: 0;
+        left: 0;
+      }
+    }
+  }
+}
