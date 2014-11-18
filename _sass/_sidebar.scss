@@ -65,10 +65,11 @@ $change: 'xsmall';
       height: 100%;
       overflow: hidden;
       background: $navbar-color;
-      position: absolute;
+      position: fixed;
       width: $sidebar-size;
       top: 0;
       left: 0;
+      z-index: 1000;
 
       @include breakpoint($change) {
         margin-left: -$sidebar-size;
@@ -184,6 +185,7 @@ $change: 'xsmall';
       margin-top: -50px;
       position: relative;
       left: $sidebar-movement;
+      overflow: hidden;
 
       @include breakpoint($change) {
         margin-top: 0;

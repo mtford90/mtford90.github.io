@@ -1,32 +1,32 @@
 ---
 layout: post
 title:  "Red Hot ReactJS"
-date:   2014-11-14 14:22:00
+date:   2014-11-18 15:04:00
 categories: reactjs react javascript
 summary: "A ReactJS boilerplate focused on developer productivity through live editing"
 ---
 
-I'm currently half way through [Hacker School](http://hackerschool.com) and have taken it upon myself to learn React! Frustrated with my crappy workflow I wanted to make the whole process as smooth as possible... enter [Red Hot React](http://mtford90.github.io/red-hot-react).
+I'm currently half way through [Hacker School](http://hackerschool.com) and am learning ReactJS! Frustrated with my crappy workflow I wanted to make the whole process as smooth as possible... enter [Red Hot React](http://mtford.co.uk/red-hot-react).
 
-In my past experience with Django I've generally used [livereload](#) for live editing of styles, templates & views. This was fine for apps that are driven entirely by URLs and sesisons but is a bit of a shit show as far as dynamic single page web apps are concerned. 
+In my past experience with Django & Angular I've generally used [livereload](#) for live editing of styles, templates & views. A change is detected, the browser is signaled and the page refreshes. This was fine for apps that are driven entirely by URLs and sesisons but left problems unsolved with single page web apps.
 
 If you're several levels deep in your app's navigation hierarchy the component and associated state wouldn't neccessarily be visible after the refresh. My time would be wasted trying to recreate that state and anything that wastes developer time needs to be **wiped out**.
 
-[Red Hot React](http://mtford90.github.io/red-hot-react) is a pretty opinionated boilerplate I intend to fork for all my future React projects. I incorporated a ton of libraries & tools from the JS & React communities and concentrated on maximising productivity - both in development and delivery.
+[Red Hot React](http://mtford90.github.io/red-hot-react) is an opinionated boilerplate I intend to fork for all my future React projects. I incorporated a ton of libraries & tools from the JS & React communities and concentrated on maximising productivity - both in development and delivery.
 
 ## Features
 
-For the full feature list and explanations, hit up the github [repo](http://mtford90.github.io/red-hot-react) and the heavily commented codebase, but here's a quick fire summary of the more interesting stuff:
+For the full feature list and explanations, hit up the github [repo](http://mtford90.github.io/red-hot-react) and the commented codebase, but here's a quick fire summary of the more interesting stuff:
 
 ### Live Editing
 
-Changes to individual React components are **injected** into the page rather than refreshing the whole page. This means that no state important to the changes we're making is lost. We can make changes to components and the instances in the DOM will **react** to those changes:
+Changes to individual React components are **injected** into the page rather than refreshing the whole page. This means that no state important to the changes we're making is lost. We can make changes to components and the instances in the DOM will ***react*** to those changes:
 
-![](change_component.gif)
+![Change ReactJS Components]({{ site.url }}/images/change_component.gif)
 
 The same also applies to stylesheets:
 
-![](change_styles.gif)
+![Change Stylesheets]({{ site.url }}/images/change_styles.gif)
 
 ### Compilation 
 
@@ -47,7 +47,6 @@ Javascript & Styles are all compiled into a single bundle. This is the weird bit
 </Row>
 {% endhighlight %}
 
-
 ### Routing
 
 [react-router](https://github.com/rackt/react-router) is included and configured with sane defaults and is ridiculously easy to configure: 
@@ -66,7 +65,7 @@ var navigationItems = [
 
 ### Live Editing
 
-[Webpack](http://webpack.github.io/) is a module bundler similar in concept to browserify however it has a some really useful features and concepts that enhance both development & delivery.
+[Webpack](http://webpack.github.io/) is a module bundler similar in concept to browserify however it has some really useful features and concepts that enhance both development & delivery.
 
 **Loaders** perform preprocessing on any file types e.g. the CoffeeScript loader will transform CoffeeScript into JavaScript. The interesting thing with loaders is that they are capable of bundling *any* static file into the Javascript bundle. Anything from styles, fonts and even images if you're so inclined:
 
