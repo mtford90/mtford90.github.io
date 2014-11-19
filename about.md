@@ -3,6 +3,7 @@ layout: page
 title: About
 ---
 
+
 <div>
 <h2><img class="me" src="{{site.baseurl}}images/me.png"></img> Michael Ford</h2>
 </div>
@@ -26,3 +27,4 @@ I'm opinionated but not attached to any one framework or technology. Different p
 
 <iframe src="http://ghbtns.com/github-btn.html?user=mtford90&type=follow&count=false"
   allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+  

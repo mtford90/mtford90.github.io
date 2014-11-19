@@ -1,16 +1,19 @@
 $adjustment: 5px;
 
-img {
-  &.me {
-    $width: 35px;
-    width: $width;
-    border-radius: $width;
-    position: relative;
-    bottom: 2px;
-    right: $adjustment;
+#page {
+  img {
+    &.me {
+      $width: 35px;
+      width: $width;
+      border-radius: $width;
+      position: relative;
+      bottom: 2px;
+      right: $adjustment;
+    }
+  }
+
+  h2 {
+    padding-left: $adjustment;
   }
 }
 
-h2 {
-  padding-left: $adjustment;
-}
