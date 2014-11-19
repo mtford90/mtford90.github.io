@@ -18,9 +18,12 @@ navigation:
  - text: Projects
    url: /projects.html
    icon: fa fa-list
-# - text: About Me
-#   url: /about.html
-#   icon: fa fa-question
+ - text: About
+   url: /about.html
+   icon: fa fa-question
+ - text: Resume
+   url: https://docs.google.com/document/d/1PeHUmihs28hqsAoOL2zbJnVyiDkGSDkoyE43AMBy3lo/edit?usp=sharing
+   icon: fa fa-folder-o
 
 projects:
  - title: Silk
